@@ -34,12 +34,13 @@ zstyle ':prezto:load' pmodule \
   'terminal' \
   'editor' \
   'history' \
-  'directory' \
   'spectrum' \
   'utility' \
+  'git' \
   'completion' \
+  'fasd' \
   'history-substring-search' \
-  'prompt'
+  'autosuggestions'
 
 #
 # Autosuggestions
@@ -145,7 +146,7 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme 'sorin'
+# zstyle ':prezto:module:prompt' theme 'sorin'
 
 # Set the working directory prompt display length.
 # By default, it is set to 'short'. Set it to 'long' (without '~' expansion)
@@ -161,7 +162,7 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 #
 
 # Auto switch the Python virtualenv on directory change.
-# zstyle ':prezto:module:python:virtualenv' auto-switch 'yes'
+zstyle ':prezto:module:python:virtualenv' auto-switch 'yes'
 
 # Automatically initialize virtualenvwrapper if pre-requisites are met.
 # zstyle ':prezto:module:python:virtualenv' initialize 'yes'
@@ -253,4 +254,4 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 # Enabled safe options. This aliases cp, ln, mv and rm so that they prompt
 # before deleting or overwriting files. Set to 'no' to disable this safer
 # behavior.
-# zstyle ':prezto:module:utility' safe-ops 'yes'
+zstyle ':prezto:module:utility' safe-ops 'no'
